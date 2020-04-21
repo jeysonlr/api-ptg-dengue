@@ -23,7 +23,6 @@ class RoutesDelegator
         $this->app = $callback();
 
         $this->app->get('/v1/usuariosdengue', [
-            // CheckDatabaseConnectionMiddleware::class,
             GetAllUserDengueHandler::class,
         ], 'dengue.get_usuarios');
 
@@ -32,7 +31,6 @@ class RoutesDelegator
         ], 'dengue.post_usuarios');
 
         $this->app->get('/v1/denunciasdengue', [
-            // CheckDatabaseConnectionMiddleware::class,
             GetAllDenunciasDengueHandler::class,
         ], 'dengue.get_denuncias');
 
