@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Cadastro denuncia Dengue</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="postUsuario.css">
+</head>
+
+<body>
+	<div class="container" id="div2">
+		<div class="row">
+			<h2>Seja muito bem vindo ao Zer@Dengue!</h2>
+		</div>
+		<p></p>
+		<div class="row">
+			<h2>Realize aqui seu Cadastro</h2>
+		</div>
+		<p></p>
+
+	</div>
+
+	<div class="container" id="div1">
+		<form id="postUsuarios">
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="nome">Nome:</label>
+						<input type="text" class="form-control" id="nome" placeholder="Nome" autofocus>
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="email">Endereço de e-mail</label>
+						<input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+							placeholder="Inserir email">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="senha">Senha</label>
+						<input type="password" class="form-control" id="senha" placeholder="Senha">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="cpf">CPF</label>
+						<input type="text" class="form-control" id="cpf" placeholder="CPF">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="rg">RG</label>
+						<input type="text" class="form-control" id="rg" placeholder="RG">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="estado">Estado</label>
+						<input type="text" class="form-control" id="estado" placeholder="Estado">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="cidade">Cidade</label>
+						<input type="text" class="form-control" id="cidade" placeholder="Cidade">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="bairro">Bairro</label>
+						<input type="text" class="form-control" id="bairro" placeholder="Bairro">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="form-group">
+						<label for="endereco">Endereço</label>
+						<input type="text" class="form-control" id="endereco" placeholder="Endereço">
+					</div>
+				</div>
+				<div class="col">
+					<div class="form-group">
+						<label for="telefone">Telefone</label>
+						<input type="tel" class="form-control" id="telefone" placeholder="Telefone">
+					</div>
+				</div>
+			</div>
+			<button type="button" form="postUsuarios" onclick="onSubmit()" class="btn btn-primary">Cadastrar</button>
+		</form>
+	</div>
+
+	<div class="container" id="div2">
+		<p></p>
+		<div class="row">
+			<h2> Obrigado por cuidar de todos a sua volta!</h2>
+		</div>
+	</div>
+	<p></p>
+
+	<script src="postUsuarioDengue.js"></script>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+</html>

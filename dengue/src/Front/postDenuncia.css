@@ -1,0 +1,12 @@
+body {
+    margin-top: 50px;
+    margin: 25px;
+    margin-bottom: 20px;
+    background-color: hsl(202, 84%, 83%);
+    overflow: scroll;
+}
+
+#imgTest {
+    width: 320px;
+    height: 340px;
+}

@@ -1,0 +1,29 @@
+version: '2'
+services:
+    ####################################
+    # nginx server
+    # name: serverCon
+    # port: 8080 (access from localhost:8080)
+    ####################################
+    nginx:
+        image: nginx:latest
+        container_name: json_dengue
+        ports:
+            - 8080:80
+        volumes:
+            - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+        volumes_from:
+            - php
+
+    ####################################
+    # php service
+    # name: phpCon
+    # port: 9000
+    ####################################
+    php:
+        build: ./docker/php/
+        container_name: dengue_php
+        expose:
+            - 9000
+        volumes:
+            - .:/var/www/html
