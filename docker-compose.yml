@@ -7,7 +7,7 @@ services:
     ####################################
     nginx:
         image: nginx:latest
-        container_name: json_dengue
+        container_name: dengue_nginx
         ports:
             - 8080:80
         volumes:

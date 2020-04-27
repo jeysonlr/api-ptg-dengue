@@ -6,6 +6,23 @@ body {
     overflow: scroll;
 }
 
+#div2 {
+    background-color: hsl(202, 84%, 83%);
+    width: 720px;
+    height: 190px;
+    align-items: center;
+}
+
+#div3 {
+    background-color:rgb(228, 245, 252);
+    width: 720px;
+    height: 440px;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    text-align: left;
+}
+
 #imgTest {
     width: 320px;
     height: 340px;
