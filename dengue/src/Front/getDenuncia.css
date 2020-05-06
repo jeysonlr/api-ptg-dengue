@@ -1,0 +1,35 @@
+body {
+  background-color: hsl(202, 84%, 83%);
+  overflow: scroll;
+}
+
+table {
+  align-items: center;
+  margin: 30px;
+  border-style: 1px black solid;
+  width: 94%;
+}
+table th {
+  background-color: #00f;
+  color: #fff;
+}
+table td {
+  background-color: #f0f0f0;
+  color: #0c0c0c;
+}
+  
+#div2 {
+  width: 370px;
+  height: 160px;
+  text-align: center;
+}
+
+#div3 {
+  background-color:rgb(228, 245, 252);
+  width: 1020px;
+  height: 340px;
+  align-items: center;
+  border-style: solid;
+  border-radius: 5px;
+  text-align: left;
+}

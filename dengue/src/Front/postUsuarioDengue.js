@@ -1,4 +1,3 @@
-// Requisição de post para salvar cadastro de usuario no banco de dados
 
 function onSubmit() {
     console.log(nome = document.getElementById("nome").value)
@@ -43,6 +42,5 @@ function postUsuario(data) {
         alert(response.data.data)
     }).catch(err => {
         alert("Ocorreu erro ao salvar dados de usuario " + err.error)
-        console.log(error)
     })
 }

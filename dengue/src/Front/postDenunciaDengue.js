@@ -1,24 +1,25 @@
-// Requisição de post para salvar denuncia no banco de dados
 
 function onSubmit() {
     let endereco = document.getElementById('endereco').value
     let imagem = encodeImageFileAsURL()
     let descricao = document.getElementById('descricao').value
+    let estado = document.getElementById('estado').value
+    let cidade = document.getElementById('cidade').value
 
     const data = {
         endereco: endereco,
         imagem: imagem,
-        descricao: descricao
+        descricao: descricao,
+        estado: estado,
+        cidade: cidade
     }
     postDenuncia(data)
 }
 
 function encodeImageFileAsURL() {
-
     var filesSelected = document.getElementById("imagem").files;
     if (filesSelected.length > 0) {
         var fileToLoad = filesSelected[0];
-
         var fileReader = new FileReader();
 
         fileReader.onload = function (fileLoadedEvent) {
@@ -54,6 +55,7 @@ function postDenuncia(data) {
         alert(response.data.data)
         window.location.replace("postDenunciaDengue.html")
     }).catch(err => {
-        alert("Ocorreu um erro ao inserir sua denuncia " + err.error)
+        console.log(response.data.error)
+        alert("Ocorreu um erro ao inserir sua denuncia " + err)
     })
 }

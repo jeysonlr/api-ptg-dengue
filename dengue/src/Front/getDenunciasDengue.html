@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Listagem denuncia Dengue</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="getDenuncia.css">
+</head>
+
+<body>
+    <div class="container" id="div2">
+        <br><br>
+        <div class="row">
+            <br><br>
+            <h2 style="align-items: center;">Denuncias recebidas!</h2>
+        </div>
+        <p></p>
+
+    </div>
+    <div class="container" id="div3">
+        <table>
+            <thead>
+                <tr style="border: 1px solid #000000;">
+                    <th style="border: 1px solid #000000; text-align: center; width: auto;">Endereço</th>
+                    <th style="border: 1px solid #000000; text-align: center; width: auto;">Estado</th>
+                    <th style="border: 1px solid #000000; text-align: center; width: auto;">Cidade</th>
+                    <th style="border: 1px solid #000000; text-align: center; width: auto;">Descrição</th>
+                    <th id="imagem" style="border: 1px solid #000000; text-align: center; width: auto;">Imagem</th>
+                </tr>
+            </thead>
+            <tbody id="corpoTabela" style="border: 1px solid #000000">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="getDenuncia.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

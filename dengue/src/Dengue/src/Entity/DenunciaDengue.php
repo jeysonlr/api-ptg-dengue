@@ -52,6 +52,22 @@ class DenunciaDengue implements BaseEntityInterface
     private $descricao;
 
     /**
+     * @var string
+     * @Type("string")
+     * @ORM\Column(name="estado", type="text")
+     * @Assert\NotBlank(message="O campo estado é obrigatório!")
+     */
+    private $estado;
+
+    /**
+     * @var string
+     * @Type("string")
+     * @ORM\Column(name="cidade", type="text")
+     * @Assert\NotBlank(message="O campo cidade é obrigatório!")
+     */
+    private $cidade;
+
+    /**
      * Get the value of iddenunciadengue
      *
      * @return  int
@@ -143,6 +159,54 @@ class DenunciaDengue implements BaseEntityInterface
     public function setDescricao(string $descricao)
     {
         $this->descricao = $descricao;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of estado
+     *
+     * @return  string
+     */
+    public function getEstado()
+    {
+        return $this->estado;
+    }
+
+    /**
+     * Set the value of estado
+     *
+     * @param  string  $estado
+     *
+     * @return  self
+     */
+    public function setEstado(string $estado)
+    {
+        $this->estado = $estado;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of cidade
+     *
+     * @return  string
+     */
+    public function getCidade()
+    {
+        return $this->cidade;
+    }
+
+    /**
+     * Set the value of cidade
+     *
+     * @param  string  $cidade
+     *
+     * @return  self
+     */
+    public function setCidade(string $cidade)
+    {
+        $this->cidade = $cidade;
 
         return $this;
     }
