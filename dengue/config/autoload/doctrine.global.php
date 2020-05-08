@@ -26,26 +26,8 @@ return [
             'orm_default' => [
                 'class' => MappingDriverChain::class,
                 'drivers' => [
-                    'App\Entity' => 'app_entity',
-                    'User\Entity' => 'user_entity',
-                    'Authentication\Entity' => 'authentication_entity',
                     'Dengue\Entity' => 'dengue_entity',
                 ],
-            ],
-            'app_entity' => [
-                'class' => AnnotationDriver::class,
-                'cache' => 'array',
-                'paths' => [__DIR__ . '/../../src/App/src/Entity'],
-            ],
-            'user_entity' => [
-                'class' => AnnotationDriver::class,
-                'cache' => 'array',
-                'paths' => [__DIR__ . '/../../src/User/src/Entity'],
-            ],
-            'authentication_entity' => [
-                'class' => AnnotationDriver::class,
-                'cache' => 'array',
-                'paths' => [__DIR__ . '/../../src/Authentication/src/Entity'],
             ],
             'dengue_entity' => [
                 'class' => AnnotationDriver::class,

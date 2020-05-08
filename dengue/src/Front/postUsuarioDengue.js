@@ -1,15 +1,14 @@
-
 function onSubmit() {
-    console.log(nome = document.getElementById("nome").value)
-    console.log(email = document.getElementById('email').value)
-    console.log(senha = document.getElementById('senha').value)
-    console.log(cpf = document.getElementById('cpf').value)
-    console.log(rg = document.getElementById('rg').value)
-    console.log(estado = document.getElementById('estado').value)
-    console.log(cidade = document.getElementById('cidade').value)
-    console.log(bairro = document.getElementById('bairro').value)
-    console.log(endereco = document.getElementById('endereco').value)
-    console.log(telefone = document.getElementById('telefone').value)
+    nome = document.getElementById("nome").value
+    email = document.getElementById('email').value
+    senha = document.getElementById('senha').value
+    cpf = document.getElementById('cpf').value
+    rg = document.getElementById('rg').value
+    estado = document.getElementById('estado').value
+    cidade = document.getElementById('cidade').value
+    bairro = document.getElementById('bairro').value
+    endereco = document.getElementById('endereco').value
+    telefone = document.getElementById('telefone').value
 
     const data = {
         nome: nome,
